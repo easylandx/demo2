@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTER THE WORLD • TADENI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@400;700&family=Inter:wght@300;400;500&amp;display=swap');
+        
+        :root {
+            --gold: #d4af37;
+        }
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .display-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section-title {
+            font-size: 4.5rem;
+            line-height: 1.1;
+        }
+
+        .nav-link {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #d4af37;
+            transform: translateY(-2px);
+        }
+
+        .image-hover {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .image-hover:hover {
+            transform: scale(1.03);
+            filter: brightness(1.1) contrast(1.1);
+        }
+
+        .grain {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.03) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255,255,255,0.02) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8 py-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-5 h-px bg-white"></div>
+                <span class="text-xl tracking-[4px] font-light">TADENI</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm tracking-widest font-light">
+                <a href="#live" class="nav-link">LIVE</a>
+                <a href="#sessions" class="nav-link">SESSIONS</a>
+                <a href="#music" class="nav-link">MUSIC</a>
+                <a href="#visual" class="nav-link">VISUAL</a>
+                <a href="#journal" class="nav-link">JOURNAL</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+            
+            <a href="#contact" 
+               class="px-8 py-3 border border-white/30 hover:border-[#d4af37] hover:text-[#d4af37] transition-all text-sm tracking-widest">
+                REACH OUT
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center justify-center relative grain">
+        <div class="text-center max-w-5xl mx-auto px-6 z-10">
+            <h1 class="display-font text-[9vw] leading-none tracking-[-4px] mb-6 text-white">
+                ENTER THE WORLD
+            </h1>
+            <p class="text-2xl md:text-3xl tracking-[6px] uppercase font-light text-white/90 mb-12">
+                GIULIANO MELI • TADENI
+            </p>
+            <div class="flex justify-center gap-6">
+                <a href="#live" 
+                   class="inline-block px-12 py-5 border border-white/60 hover:border-white text-sm tracking-widest transition-all hover:scale-105">
+                    LIVE PERFORMANCES
+                </a>
+                <a href="#sessions" 
+                   class="inline-block px-12 py-5 bg-white text-black text-sm tracking-widest transition-all hover:scale-105">
+                    PRIVATE SESSIONS
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs tracking-widest opacity-70">
+            <div class="w-px h-12 bg-gradient-to-b from-transparent via-white to-transparent"></div>
+            SCROLL
+        </div>
+    </header>
+
+    <!-- BIO -->
+    <section class="py-32 border-b border-white/10">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-7">
+                    <h2 class="display-font text-7xl leading-none mb-10">
+                        Multidimensional artist.<br>
+                        <span class="text-white/70">Voice. Piano. Soul.</span>
+                    </h2>
+                    <div class="prose prose-invert text-lg leading-relaxed text-white/80">
+                        <p>Giuliano Meli (Tadeni) is an italo-illyrian vocalist, pianist, mathematician and multidisciplinary artist based in Mallorca.</p>
+                        <p class="mt-6">His work explores the intersection between music, beauty, philosophy and emotional expression, creating intimate and cinematic experiences.</p>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-5">
+                    <img src="https://picsum.photos/id/1015/800/1000" 
+                         alt="Tadeni Portrait" 
+                         class="w-full aspect-[4/5] object-cover image-hover rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE PERFORMANCES -->
+    <section id="live" class="py-32 bg-zinc-950">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex flex-col lg:flex-row gap-20">
+                <div class="lg:w-5/12">
+                    <div class="sticky top-28">
+                        <span class="uppercase text-xs tracking-[3px] text-white/60">EXPERIENCE</span>
+                        <h2 class="display-font text-8xl leading-none mt-4 mb-8">Live Performance</h2>
+                        <p class="text-xl text-white/70">Intimate. Cinematic. Refined.</p>
+                        
+                        <div class="mt-12 space-y-8">
+                            <div class="border-l-2 border-white/30 pl-8">
+                                <h4 class="font-medium">Available Formats</h4>
+                                <ul class="mt-4 space-y-3 text-white/80">
+                                    <li>Solo Piano</li>
+                                    <li>Voice &amp; Piano</li>
+                                    <li>Acoustic Duo</li>
+                                    <li>Curated Live Ensemble</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" 
+                           class="mt-16 inline-flex items-center gap-3 group">
+                            <span class="text-sm tracking-widest">BOOK A PERFORMANCE</span>
+                            <div class="w-8 h-px bg-white group-hover:w-12 transition-all"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:w-7/12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="aspect-video bg-zinc-900 rounded-3xl overflow-hidden image-hover">
+                        <img src="https://picsum.photos/id/201/800/600" alt="Live Performance" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-video bg-zinc-900 rounded-3xl overflow-hidden image-hover">
+                        <img src="https://picsum.photos/id/1016/800/600" alt="Live Performance" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRIVATE SESSIONS -->
+    <section id="sessions" class="py-32">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <span class="text-[#d4af37] text-sm tracking-widest">THE ART OF EXPRESSION</span>
+                    <h2 class="display-font text-7xl leading-tight mt-6">Private Sessions</h2>
+                    <p class="mt-10 text-lg text-white/80 leading-relaxed">
+                        Designed for singers, musicians, performers, and sensitive creatives who want to express themselves with more confidence, depth, and authenticity.
+                    </p>
+                    <div class="mt-12 pt-12 border-t border-white/10">
+                        <a href="https://wa.me/393442855687" target="_blank"
+                           class="inline-flex items-center gap-4 text-xl group">
+                            <span>Book a Session</span>
+                            <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-7">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-zinc-900 p-8 rounded-3xl">
+                            <h4 class="uppercase text-sm mb-6">What’s Included</h4>
+                            <ul class="space-y-6 text-white/80">
+                                <li class="flex gap-4"><span class="text-[#d4af37]">01</span> Voice Technique</li>
+                                <li class="flex gap-4"><span class="text-[#d4af37]">02</span> Piano Expression</li>
+                                <li class="flex gap-4"><span class="text-[#d4af37]">03</span> Performance &amp; Interpretation</li>
+                                <li class="flex gap-4"><span class="text-[#d4af37]">04</span> Stage Presence</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="bg-zinc-900 p-8 rounded-3xl h-1/2">
+                                <p class="italic">"You heal us with your voice."</p>
+                                <p class="text-sm mt-6 text-white/60">— Brita, Mallorca</p>
+                            </div>
+                            <div class="bg-zinc-900 p-8 rounded-3xl h-1/2">
+                                <p class="italic">"More than music, it was an atmosphere."</p>
+                                <p class="text-sm mt-6 text-white/60">— Pedro, Mallorca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section id="music" class="py-32 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="display-font text-7xl mb-6">Songs as a form of memory</h2>
+            <p class="text-white/70 max-w-md mx-auto">Love • Longing • Desire • Rebirth</p>
+            
+            <div class="mt-20 flex flex-wrap justify-center gap-8">
+                <a href="https://open.spotify.com/intl-it/artist/23FKQoDaOZtlCi44LEBJXt" target="_blank"
+                   class="group flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white/10 hover:bg-white/20 rounded-2xl flex items-center justify-center text-4xl transition-colors">
+                        <i class="fa-brands fa-spotify"></i>
+                    </div>
+                    <span class="text-xs tracking-widest mt-4">SPOTIFY</span>
+                </a>
+                <a href="https://www.instagram.com/tadenireal/" target="_blank"
+                   class="group flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white/10 hover:bg-white/20 rounded-2xl flex items-center justify-center text-4xl transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <span class="text-xs tracking-widest mt-4">@TADENIREAL</span>
+                </a>
+            </div>
+            
+            <div class="mt-24 grid md:grid-cols-3 gap-8">
+                <div class="bg-black border border-white/10 p-8 rounded-3xl">Cellophane</div>
+                <div class="bg-black border border-white/10 p-8 rounded-3xl">An Open Confession</div>
+                <div class="bg-black border border-white/10 p-8 rounded-3xl">Ne të Dy</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-32 border-t border-white/10">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="display-font text-8xl leading-none mb-16">Reach Out</h2>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-12 text-left">
+                <div>
+                    <p class="uppercase text-xs tracking-widest mb-4">Phone / WhatsApp</p>
+                    <a href="https://wa.me/393442855687" target="_blank" class="text-4xl hover:text-[#d4af37] transition-colors">+39 344 285 5687</a>
+                </div>
+                <div>
+                    <p class="uppercase text-xs tracking-widest mb-4">Email</p>
+                    <a href="mailto:giuliano.meli@icloud.com" class="text-4xl hover:text-[#d4af37] transition-colors">giuliano.meli@icloud.com</a>
+                </div>
+            </div>
+            
+            <div class="mt-24 text-xs tracking-widest text-white/50">
+                BASED IN MALLORCA • AVAILABLE INTERNATIONALLY
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center text-xs tracking-widest text-white/40">
+        © TADENI • 2026
+    </footer>
+
+    <script>
+        // Tailwind script already included via CDN
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
