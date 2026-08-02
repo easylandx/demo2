@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     ETIQUETAS SEO
+     Personaliza: cambia el nombre, el puesto y la descripción.
+     ============================================================ -->
+<title>Alex Morgan — Product Manager Senior | CV y Portfolio</title>
+<meta name="description" content="Alex Morgan es Product Manager Senior con más de 9 años impulsando el crecimiento de productos B2B SaaS. Descubre logros clave, resultados medibles y ponte en contacto sobre nuevas oportunidades.">
+<meta name="keywords" content="Alex Morgan, Product Manager, CV, Currículum, Portfolio, Contratar Product Manager">
+<meta name="author" content="Alex Morgan">
+<meta property="og:title" content="Alex Morgan — Product Manager Senior">
+<meta property="og:description" content="Más de 9 años convirtiendo estrategia de producto en crecimiento medible. Descubre mi experiencia y ponte en contacto.">
+<meta property="og:type" content="profile">
+<meta name="robots" content="index, follow">
+
+<!-- Tailwind CSS vía CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts: Fraunces (serif de titulares) + Inter (texto) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script>
+  // Tokens de diseño personalizados de Tailwind — cámbialos para re-tematizar toda la página.
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:   '#12213A', // azul marino profundo — superficie oscura principal
+          paper: '#F7F5F1', // blanco cálido — superficie clara principal
+          gold:  '#C9A227', // acento dorado/latón — CTAs y destacados
+          slate: '#5B6472', // texto secundario
+          line:  '#DCD6C9', // bordes finos sobre superficies claras
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Fraunces', serif; }
+
+  /* Micro-interacciones sutiles */
+  .lift { transition: transform .25s ease, box-shadow .25s ease; }
+  .lift:hover { transform: translateY(-4px); box-shadow: 0 12px 30px -12px rgba(18,33,58,0.25); }
+
+  .btn-press { transition: transform .15s ease; }
+  .btn-press:active { transform: scale(0.97); }
+
+  /* Marca tipo "pestaña de carpeta" usada SOLO en la línea de tiempo profesional,
+     ya que ese contenido es realmente cronológico. */
+  .tab-notch::before {
+    content: '';
+    position: absolute;
+    left: -1px; top: 0;
+    width: 3px; height: 100%;
+    background: #C9A227;
+    border-radius: 3px;
+  }
+
+  /* Sello / insignia para la oferta de EasyLandX */
+  .seal {
+    background: radial-gradient(circle at 30% 30%, #E4C766, #C9A227 60%, #9c7d18 100%);
+  }
+
+  ::selection { background: #C9A227; color: #12213A; }
+
+  /* Respeto por preferencias de movimiento reducido */
+  @media (prefers-reduced-motion: reduce) {
+    .lift, .btn-press, html { transition: none !important; scroll-behavior: auto !important; }
+  }
+
+  /* Foco de teclado visible */
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid #C9A227;
+    outline-offset: 3px;
+  }
+</style>
+</head>
+
+<body class="bg-paper text-ink antialiased">
+
+<!-- ============================================================
+     NAVEGACIÓN
+     ============================================================ -->
+<header class="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-line">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#top" class="font-display text-xl tracking-tight">Alex Morgan</a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate">
+      <a href="#experience" class="hover:text-ink transition-colors">Experiencia</a>
+      <a href="#skills" class="hover:text-ink transition-colors">Habilidades</a>
+      <a href="#offer" class="hover:text-ink transition-colors">Crea la Tuya</a>
+      <a href="#contact" class="hover:text-ink transition-colors">Contacto</a>
+    </div>
+    <a href="#contact" class="btn-press hidden md:inline-block bg-ink text-paper text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-ink/90">
+      Hablemos
+    </a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     Reemplaza el nombre, el puesto, la foto y el texto con los datos reales.
+     ============================================================ -->
+<section id="top" class="relative overflow-hidden bg-ink text-paper">
+  <div class="absolute inset-0 opacity-[0.06] pointer-events-none"
+       style="background-image: radial-gradient(#C9A227 1px, transparent 1px); background-size: 22px 22px;"></div>
+
+  <div class="max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-5 gap-12 items-center relative">
+
+    <div class="md:col-span-3">
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-5">Product Manager Senior · B2B SaaS</p>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] font-medium">
+        Convierto problemas de producto ambiguos en crecimiento que los reclutadores pueden medir.
+      </h1>
+      <p class="mt-6 text-lg text-paper/75 max-w-xl leading-relaxed">
+        Nueve años construyendo y escalando productos B2B SaaS — desde lanzamientos
+        desde cero hasta plataformas con más de 2M de usuarios. Esta página es mi CV
+        vivo, no un PDF que se hojea seis segundos y se olvida.
+      </p>
+
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="#experience" class="btn-press bg-gold text-ink font-semibold px-7 py-3.5 rounded-full hover:bg-gold/90">
+          Ver Mi Experiencia
+        </a>
+        <a href="#offer" class="btn-press border border-paper/30 text-paper font-semibold px-7 py-3.5 rounded-full hover:bg-paper/10">
+          Crea Tu Propia Página de CV →
+        </a>
+      </div>
+
+      <div class="mt-10 grid grid-cols-3 max-w-md gap-6 text-sm">
+        <div>
+          <p class="font-display text-2xl text-gold">9+</p>
+          <p class="text-paper/60">Años en producto</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl text-gold">14M€</p>
+          <p class="text-paper/60">Ingresos influenciados</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl text-gold">4</p>
+          <p class="text-paper/60">Productos lanzados</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:col-span-2 flex justify-center md:justify-end">
+      <div class="relative">
+        <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-full bg-paper/10 border border-paper/20 flex items-center justify-center overflow-hidden">
+          <!-- Reemplaza con <img src="tu-foto.jpg" class="w-full h-full object-cover" alt="Foto de Alex Morgan"> -->
+          <svg viewBox="0 0 200 200" class="w-full h-full text-paper/30">
+            <circle cx="100" cy="78" r="38" fill="currentColor"/>
+            <path d="M30 190 C30 130 170 130 170 190 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="absolute -bottom-3 -left-3 bg-gold text-ink text-xs font-semibold px-4 py-2 rounded-full shadow-lg">
+          Abierto/a a oportunidades
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     RESUMEN PROFESIONAL
+     ============================================================ -->
+<section class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+  <div class="grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4">
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Resumen</p>
+      <h2 class="font-display text-3xl leading-tight">Liderazgo de producto basado en resultados, no en actividad.</h2>
+    </div>
+    <div class="md:col-span-8 text-slate leading-relaxed text-lg space-y-4">
+      <p>
+        Soy product manager y llegué a la estrategia pasando antes por datos y
+        atención al cliente — por eso sigo leyendo la cola de soporte, no solo el
+        roadmap. He liderado equipos multidisciplinares de hasta 14 personas, he
+        llevado productos desde el primer boceto hasta líneas de ingresos de
+        siete cifras, y soy más útil justo en el "medio confuso": cuando el
+        problema es real pero la solución aún no es obvia.
+      </p>
+      <p>
+        Actualmente enfocado/a en funcionalidades de IA aplicada para herramientas
+        SaaS de mercado medio, y buscando un puesto de Head of Product o Senior PM
+        donde pueda liderar una línea de producto de principio a fin.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOGROS CLAVE / ENFOQUE ACTUAL
+     ============================================================ -->
+<section class="bg-white border-y border-line">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Logros clave</p>
+    <h2 class="font-display text-3xl mb-10">Lo que realmente produjeron los últimos años.</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="lift bg-paper border border-line rounded-2xl p-6">
+        <p class="font-display text-3xl text-ink mb-1">+38%</p>
+        <p class="text-sm text-slate">Tasa de activación tras rediseñar el onboarding en Northline</p>
+      </div>
+      <div class="lift bg-paper border border-line rounded-2xl p-6">
+        <p class="font-display text-3xl text-ink mb-1">14M€</p>
+        <p class="text-sm text-slate">Nuevo ARR influenciado en dos lanzamientos de producto</p>
+      </div>
+      <div class="lift bg-paper border border-line rounded-2xl p-6">
+        <p class="font-display text-3xl text-ink mb-1">-42%</p>
+        <p class="text-sm text-slate">Volumen de tickets de soporte tras rediseñar la facturación self-service</p>
+      </div>
+      <div class="lift bg-paper border border-line rounded-2xl p-6">
+        <p class="font-display text-3xl text-ink mb-1">14</p>
+        <p class="text-sm text-slate">Miembros de equipo multidisciplinar liderados en el lanzamiento más grande</p>
+      </div>
+    </div>
+
+    <div class="mt-10 bg-ink text-paper rounded-2xl p-8 flex flex-col sm:flex-row gap-6 sm:items-center justify-between">
+      <div>
+        <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-2">Enfoque actual</p>
+        <p class="text-lg">Funcionalidades de IA aplicada para SaaS de mercado medio — desde el descubrimiento hasta el lanzamiento general.</p>
+      </div>
+      <a href="#contact" class="btn-press whitespace-nowrap bg-gold text-ink font-semibold px-6 py-3 rounded-full hover:bg-gold/90 self-start sm:self-auto">
+        Iniciar una Conversación
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRAYECTORIA PROFESIONAL (cronológica — los números aquí sí aportan información)
+     ============================================================ -->
+<section id="experience" class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+  <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Trayectoria profesional</p>
+  <h2 class="font-display text-3xl mb-12">De dónde vinieron los resultados.</h2>
+
+  <div class="space-y-10">
+
+    <!-- Puesto 1 -->
+    <div class="relative pl-8 tab-notch">
+      <p class="text-sm text-slate font-medium">2022 — Presente</p>
+      <h3 class="font-display text-2xl mt-1">Product Manager Senior, Northline Software</h3>
+      <ul class="mt-3 text-slate leading-relaxed space-y-2 list-disc list-inside">
+        <li>Responsable de la línea de producto de facturación y suscripciones de una plataforma B2B con 2M de usuarios.</li>
+        <li>Rediseñé el flujo de onboarding, aumentando la tasa de activación un 38% en dos trimestres.</li>
+        <li>Lancé un modelo de precios por consumo, sumando 9M€ de ARR incremental.</li>
+        <li>Construí y lideré un equipo de 6 ingenieros, 2 diseñadores y 1 analista.</li>
+      </ul>
+    </div>
+
+    <!-- Puesto 2 -->
+    <div class="relative pl-8 tab-notch">
+      <p class="text-sm text-slate font-medium">2019 — 2022</p>
+      <h3 class="font-display text-2xl mt-1">Product Manager, Fielda Technologies</h3>
+      <ul class="mt-3 text-slate leading-relaxed space-y-2 list-disc list-inside">
+        <li>Llevé la app móvil de servicio de campo desde prototipo hasta 40.000 usuarios activos.</li>
+        <li>Reduje el tiempo medio de onboarding de 9 a 3 minutos simplificando la configuración inicial.</li>
+        <li>Colaboré con ventas para cerrar las primeras 5 cuentas enterprise de la plataforma.</li>
+      </ul>
+    </div>
+
+    <!-- Puesto 3 -->
+    <div class="relative pl-8 tab-notch">
+      <p class="text-sm text-slate font-medium">2016 — 2019</p>
+      <h3 class="font-display text-2xl mt-1">Associate Product Manager, Vantree Data</h3>
+      <ul class="mt-3 text-slate leading-relaxed space-y-2 list-disc list-inside">
+        <li>Pasé de atención al cliente a producto tras construir una herramienta interna que
+          redujo el tiempo de resolución de tickets un 27%.</li>
+        <li>Dirigí la investigación de usuarios para el rediseño del panel de analítica, lanzado al 100% de los usuarios.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     EDUCACIÓN
+     ============================================================ -->
+<section class="bg-white border-y border-line">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-2 gap-10">
+    <div>
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Educación</p>
+      <h2 class="font-display text-3xl mb-8">Bases.</h2>
+    </div>
+    <div class="space-y-6">
+      <div>
+        <p class="font-semibold text-ink">M.S. en Sistemas de Información</p>
+        <p class="text-slate text-sm">Universidad de Michigan · 2016</p>
+      </div>
+      <div>
+        <p class="font-semibold text-ink">Grado en Economía</p>
+        <p class="text-slate text-sm">Universidad de Indiana · 2014</p>
+      </div>
+      <div>
+        <p class="font-semibold text-ink">Certified Scrum Product Owner (CSPO)</p>
+        <p class="text-slate text-sm">Scrum Alliance · 2020</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HABILIDADES / COMPETENCIAS CLAVE
+     ============================================================ -->
+<section id="skills" class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+  <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Competencias clave</p>
+  <h2 class="font-display text-3xl mb-10">Lo que aporto a un equipo de producto.</h2>
+
+  <div class="flex flex-wrap gap-3">
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Estrategia de Producto</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Roadmapping</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Investigación de Usuarios</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Tests A/B</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">SQL y Analítica</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Estrategia de Precios</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Gestión de Stakeholders</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">Liderazgo Multidisciplinar</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">B2B SaaS</span>
+    <span class="px-4 py-2 rounded-full bg-white border border-line text-sm font-medium">IA Aplicada</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     VALORES FUNDAMENTALES
+     ============================================================ -->
+<section class="bg-ink text-paper">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20">
+    <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Cómo trabajo</p>
+    <h2 class="font-display text-3xl mb-10">Valores fundamentales.</h2>
+
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-display text-xl text-gold mb-2">Evidencia antes que opinión</h3>
+        <p class="text-paper/70 text-sm leading-relaxed">Las decisiones se basan en datos y conversaciones directas con clientes, no en la voz más alta de la sala.</p>
+      </div>
+      <div>
+        <h3 class="font-display text-xl text-gold mb-2">Lanzar y luego aprender</h3>
+        <p class="text-paper/70 text-sm leading-relaxed">Lanzamientos pequeños y rápidos superan a roadmaps largos que nadie puede validar hasta el día del lanzamiento.</p>
+      </div>
+      <div>
+        <h3 class="font-display text-xl text-gold mb-2">La claridad es una forma de respeto</h3>
+        <p class="text-paper/70 text-sm leading-relaxed">Prioridades claras y feedback honesto ahorran más tiempo a los equipos que cualquier proceso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     OFERTA DE SERVICIO: EasyLandX
+     Esta sección es intencionalmente distinta — es el "inserto"
+     que le vende el servicio a quien vea este CV.
+     ============================================================ -->
+<section id="offer" class="relative overflow-hidden bg-paper">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="w-16 h-16 rounded-full seal mx-auto mb-6 flex items-center justify-center shadow-lg">
+        <span class="font-display text-ink text-xl font-semibold">EX</span>
+      </div>
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Para quienes buscan empleo en LinkedIn</p>
+      <h2 class="font-display text-3xl sm:text-4xl leading-tight">
+        Destaca en LinkedIn — Consigue Tu Propia Página de CV Profesional
+      </h2>
+      <p class="mt-5 text-slate text-lg leading-relaxed">
+        Un currículum en PDF se hojea durante seis segundos. Una página como esta se
+        lee, se comparte y se recuerda — y es exactamente lo que <span class="font-semibold text-ink">EasyLandX</span> crea para ti.
+      </p>
+    </div>
+
+    <!-- Beneficios -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div class="lift bg-white border border-line rounded-2xl p-6">
+        <p class="font-display text-lg mb-2">Rápida y Bonita</p>
+        <p class="text-sm text-slate leading-relaxed">Diseño moderno y optimizado para móvil que carga al instante y luce impecable en cualquier dispositivo.</p>
+      </div>
+      <div class="lift bg-white border border-line rounded-2xl p-6">
+        <p class="font-display text-lg mb-2">Creada Desde LinkedIn</p>
+        <p class="text-sm text-slate leading-relaxed">Envíanos la URL de tu perfil — convertimos tu experiencia actual en una página que convierte.</p>
+      </div>
+      <div class="lift bg-white border border-line rounded-2xl p-6">
+        <p class="font-display text-lg mb-2">Más Allá del PDF</p>
+        <p class="text-sm text-slate leading-relaxed">Una página viva supera a un currículum estático que los reclutadores olvidan al cerrarlo.</p>
+      </div>
+      <div class="lift bg-white border border-line rounded-2xl p-6">
+        <p class="font-display text-lg mb-2">Más Entrevistas</p>
+        <p class="text-sm text-slate leading-relaxed">Los candidatos reportan más visitas al perfil y más solicitudes de entrevista en pocas semanas.</p>
+      </div>
+    </div>
+
+    <!-- Oferta de precio único -->
+    <div class="max-w-md mx-auto">
+      <div class="lift bg-ink text-paper rounded-2xl p-10 flex flex-col relative border-2 border-gold text-center">
+        <p class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-ink text-xs font-bold px-4 py-1 rounded-full">Oferta por Tiempo Limitado</p>
+        <p class="uppercase tracking-[0.15em] text-xs font-semibold text-gold mb-3">Tu Página de CV</p>
+        <p class="font-display text-5xl mb-1">89€</p>
+        <p class="text-sm text-paper/70 mb-8">Pago único · entrega en 24–48 horas</p>
+        <ul class="text-sm text-paper/80 space-y-2 mb-8 text-left mx-auto">
+          <li>✓ Página de CV de una sola página, creada a partir de tu perfil de LinkedIn</li>
+          <li>✓ Paleta de colores y tipografía personalizadas</li>
+          <li>✓ Diseño optimizado para móvil y de carga rápida</li>
+          <li>✓ Sección de logros y métricas</li>
+          <li>✓ Formulario de contacto + enlace para reservar cita</li>
+          <li>✓ 2 rondas de revisiones</li>
+        </ul>
+        <a href="https://easylandx.github.io" class="btn-press text-center bg-gold text-ink font-semibold px-5 py-3.5 rounded-full hover:bg-gold/90">
+          Consigue Mi Página por 89€
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center mt-14">
+      <a href="https://easylandx.github.io" class="btn-press inline-block bg-gold text-ink font-bold px-8 py-4 rounded-full text-lg hover:bg-gold/90 shadow-lg">
+        Crea Tu Propia Página de CV con EasyLandX →
+      </a>
+      <p class="text-sm text-slate mt-4">Sin necesidad de programar. Solo tu perfil de LinkedIn y algunos logros de tu carrera.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO / RESERVA
+     Reemplaza los enlaces de mailto/teléfono/redes con datos reales.
+     ============================================================ -->
+<section id="contact" class="bg-white border-t border-line">
+  <div class="max-w-6xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-2 gap-12">
+    <div>
+      <p class="uppercase tracking-[0.2em] text-xs font-semibold text-gold mb-3">Ponte en contacto</p>
+      <h2 class="font-display text-3xl mb-4">Hablemos sobre tu vacante abierta.</h2>
+      <p class="text-slate leading-relaxed mb-8">
+        Abierto/a a puestos de Senior PM y Head of Product en B2B SaaS. Con base en
+        Austin, TX — abierto/a a trabajo remoto e híbrido.
+      </p>
+      <div class="space-y-3 text-sm">
+        <p><span class="font-semibold text-ink">Email:</span> <a href="mailto:alex.morgan@example.com" class="text-slate hover:text-ink underline">alex.morgan@example.com</a></p>
+        <p><span class="font-semibold text-ink">Teléfono:</span> <span class="text-slate">(512) 555-0148</span></p>
+        <p><span class="font-semibold text-ink">LinkedIn:</span> <a href="https://linkedin.com/in/yourprofile" class="text-slate hover:text-ink underline">linkedin.com/in/yourprofile</a></p>
+      </div>
+    </div>
+
+    <form class="bg-paper border border-line rounded-2xl p-8 space-y-4" onsubmit="event.preventDefault(); alert('¡Gracias! Sustituye este formulario por tu servicio de email o herramienta de reservas.');">
+      <div>
+        <label class="text-sm font-medium text-ink block mb-1.5" for="name">Nombre</label>
+        <input id="name" type="text" required class="w-full rounded-lg border border-line px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Jane Recruiter">
+      </div>
+      <div>
+        <label class="text-sm font-medium text-ink block mb-1.5" for="email">Email</label>
+        <input id="email" type="email" required class="w-full rounded-lg border border-line px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-gold" placeholder="tu@empresa.com">
+      </div>
+      <div>
+        <label class="text-sm font-medium text-ink block mb-1.5" for="message">Mensaje</label>
+        <textarea id="message" rows="4" required class="w-full rounded-lg border border-line px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-gold" placeholder="Cuéntame sobre la vacante..."></textarea>
+      </div>
+      <button type="submit" class="btn-press w-full bg-ink text-paper font-semibold px-5 py-3 rounded-full hover:bg-ink/90">
+        Enviar Mensaje
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ============================================================
+     PIE DE PÁGINA
+     ============================================================ -->
+<footer class="bg-ink text-paper/60 text-sm">
+  <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p>© 2026 Alex Morgan. Creado con EasyLandX.</p>
+    <div class="flex gap-6">
+      <a href="#top" class="hover:text-paper transition-colors">Volver arriba</a>
+      <a href="https://easylandx.github.io" class="hover:text-paper transition-colors">Creado con EasyLandX</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
